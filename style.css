@@ -58,6 +58,7 @@ body{
     z-index: 2;
     width: 100%;
     padding: 20px;
+    font-size: 1.0em;
 }
 .container .ep .info .discription{
     display: none;
@@ -106,6 +107,7 @@ body{
     .container .ep .info .title{
         display: inline-block;
         position: static;
+        font-size: 1.4em;
     }
     .container .ep:hover .info .discription{
         display: inline-block;
