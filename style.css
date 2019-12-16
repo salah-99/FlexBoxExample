@@ -117,5 +117,6 @@ body{
     }
     .container .ep img{
         max-width: 30%;
+        height: auto;
     }
 }
