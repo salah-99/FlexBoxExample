@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ddd;
+    color: white;
+}
+.nav{
+    background-color: black ;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav .logo{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.nav .list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.nav .list li a{
+    padding: 13px 30px;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+.nav .list li a:hover{
+    color: cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+}
+.nav .list li a.active{
+    color: cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .ep{
+    position: relative;
+    margin: 15px;
+    max-width: 300px;
+}
+.container .ep .title{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(41, 47, 77, 0.8);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+}
+.container .ep .discription{
+    display: none;
+    position: absolute;
+    background-color: rgb(41, 47, 77, 0.8);
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+}
+
+.container .ep:hover .discription{
+    display: block;
+}
+.container .ep:hover .title{
+    display: none;
+}
