@@ -67,6 +67,11 @@ body{
     padding: 20px;
 }
 
+.container .ep img{
+    width: 100%;
+    height: 300px;;
+}
+
 .container .ep:hover .discription{
     display: block;
 }
