@@ -25,17 +25,20 @@ body{
     display: flex;
     align-items: center;
 }
-.nav .list li a{
+.nav .list li{
     padding: 13px 30px;
     align-self: center;
+
+}
+.nav .list li a{
     text-decoration: none;
     color: white;
 }
-.nav .list li a:hover{
+.nav .list li:hover{
     color: cornflowerblue;
     border-bottom: 3px solid cornflowerblue;
 }
-.nav .list li a.active{
+.nav .list li.active{
     color: cornflowerblue;
     border-bottom: 3px solid cornflowerblue;
 }
@@ -87,7 +90,22 @@ body{
 
 @media screen and (max-width: 800px){
 
+    .nav{
+        background-color: black ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     
+    }
+    .nav .list{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav .list li{
+        padding: 13px 30px;
+    }
 
     .container{
         flex-wrap: wrap;
