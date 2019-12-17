@@ -87,6 +87,8 @@ body{
 
 @media screen and (max-width: 800px){
 
+    
+
     .container{
         flex-wrap: wrap;
         flex-direction: column;
@@ -105,14 +107,12 @@ body{
     }
     
     .container .ep .info .discription{
-        display: inline-block;
         visibility: visible;
         position: static;
         height: 100%; 
         opacity: 1.0;
     }
     .container .ep .info .title{
-        display: inline-block;
         position: static;
         font-size: 1.4em;
     }
