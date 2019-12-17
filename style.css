@@ -61,12 +61,15 @@ body{
     font-size: 1.0em;
 }
 .container .ep .info .discription{
-    display: none;
+    visibility: hidden;
     position: absolute;
     background-color: rgb(41, 47, 77, 0.8);
     width: 100%;
     bottom: 0;
     padding: 20px;
+    transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    opacity: 0;
 }
 
 .container .ep img{
@@ -75,13 +78,15 @@ body{
 }
 
 .container .ep:hover  .info .discription{
-    display: block;
+    visibility: visible;
+    opacity: 1.0;
 }
 .container .ep:hover .info .title{
     display: none;
 }
 
 @media screen and (max-width: 800px){
+
     .container{
         flex-wrap: wrap;
         flex-direction: column;
@@ -101,8 +106,10 @@ body{
     
     .container .ep .info .discription{
         display: inline-block;
+        visibility: visible;
         position: static;
-        height: 100%;        
+        height: 100%; 
+        opacity: 1.0;
     }
     .container .ep .info .title{
         display: inline-block;
@@ -111,6 +118,8 @@ body{
     }
     .container .ep:hover .info .discription{
         display: inline-block;
+        visibility: visible;
+        opacity: 1.0;
     }
     .container .ep:hover .info .title{
         display: inline-block;
